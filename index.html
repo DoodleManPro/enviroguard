@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviroguard</title>
+
+    <!--! Links ========================================================-->
+    <link rel="icon" href="main/images/title-logo.png">
+    <link rel="stylesheet" href="./main/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,800&display=swap" rel="stylesheet">
+    <link rel="icon" href="./main/img/top-logo.png">
+
+</head>
+<body>
+    <section id="Home" class="section home-page">
+        <nav class="glass">
+            <img class="logo" src="./main/img/logo.png">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Water">Water</a></li>
+                <li><a href="#Electricity">Electricity</a></li>
+                <li><a href="#Carbon">Carbon</a></li>
+                <li><a href="#Fuel">Fuel</a></li>
+                <a href="./main/php/index.php" class="login-btn">Login</a>
+            </ul>
+        </nav>
+
+
+        <div class="welcome-text">
+            <h1>ENVIROGUARD</h1>
+            <h3>By Ameen and Veer</h3>
+
+            <p>The one app to calculate and monitor sustainable usage
+                of your vital resources like water, electricity, fuel
+                and also your carbon footprint!
+            </p>
+        </div>
+
+        <div class="welcome-img glass">
+            <img src="./main/img/Ocean.png" class="ocean">
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- !WATER CHART ======================================================= -->
+
+    <section class="section" id="Water">
+        <h1 class="sub-heading water">Water Consumption</h1>
+
+        <div class="chart-div water-chart glass-heavy">
+            <canvas id="myWaterChart"></canvas>
+        </div>
+        <div class="chart-text water-text glass green">
+            <h1>SUSTAINABLE!</h1>
+            <p class="good">Your water consumption rates match the sustainable
+                rates of consumption. Keep going!
+            </p>
+            <img src="./main/img/nature.png" alt="" class="chart-pic">
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- !ELECTRICITIY CHART=============================================== -->
+
+
+    <section class="section" id="Electricity">
+        <h1 class="sub-heading water">Electricity Cons.</h1>
+
+        <div class="chart-div elec-chart glass-heavy">
+            <canvas id="myElectricityChart"></canvas>
+        </div>
+        <div class="chart-text water-text glass green">
+            <h1>NOT SUSTAINABLE!</h1>
+            <p class="bad">Maybe install auto-detecting lights and turn off projectors
+                when not needed!
+            </p>
+            <img src="./main/img/no.png" alt="" class="chart-pic">
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- !CARBON CHART=============================================== -->
+
+
+    <section class="section" id="Carbon">
+        <h1 class="sub-heading carbon">Carbon Footprint</h1>
+
+        <div class="chart-div elec-chart glass-heavy">
+            <canvas id="myCarbonChart"></canvas>
+        </div>
+        <div class="chart-text water-text glass green">
+            <h1>SUSTAINABLE!</h1>
+            <p class="good">Your water consumption rates match the sustainable
+                rates of consumption. Keep going!
+            </p>
+            <img src="./main/img/nature.png" alt="" class="chart-pic">
+        </div>
+    </section>
+
+
+
+
+
+    <!-- !Fuel CHART=============================================== -->
+
+
+    <section class="section" id="Fuel">
+        <h1 class="sub-heading fuel">Fuel Consumption</h1>
+
+        <div class="chart-div elec-chart glass-heavy">
+            <canvas id="myFuelChart"></canvas>
+        </div>
+        <div class="chart-text fuel-text glass green">
+            <h1>NOT SUSTAINABLE!</h1>
+            <p class="bad">Reduce gas cars, convert to electric vehicles or try
+                using public transportation! Keep going, you got this!
+            </p>
+            <img src="./main/img/no.png" alt="" class="chart-pic">
+        </div>
+    </section>
+
+
+
+
+
+    <footer>
+        <div class="glass">
+            <p><b>Contact:</b></p>
+            <p>Vettel233510@gmail.com</p>
+            <p>mushyahamed007@gmail.com</p>
+        </div>
+        <img src="./main/img/top-logo.png">
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <script type="text/javascript" src="./main/js/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".glass"), {
+            max: 1,
+            speed: 20,
+            glare: true,
+            "max-glare": .3
+        });
+
+        VanillaTilt.init(document.querySelectorAll(".glass-heavy"), {
+            max: 10,
+            speed: 20,
+            glare: true,
+            "max-glare": .3
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./main/js/app.js"></script>
+    <script src="./main/js/water.js"></script>
+    <script src="./main/js/electricity.js"></script>
+    <script src="./main/js/carbon.js"></script>
+    <script src="./main/js/fuel.js"></script>
+</body>
+</html>

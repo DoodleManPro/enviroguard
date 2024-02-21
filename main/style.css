@@ -1,0 +1,332 @@
+/*? Pre-requisites like fonts and formats **************************************************** */
+/* Karla--> */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;700;800&display=swap');
+/* Poppins-->  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Inter: */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/** Actual code */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+
+.section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.glass {
+    box-shadow: 5px 5px 40px rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.glass-heavy {
+    box-shadow: 5px 5px 40px rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.8);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.green {
+    background: rgba(14, 223, 101, 0.1);
+}
+
+
+
+
+
+/* ! HOME PAGE ========================================================== */
+
+#Home {
+    
+    background-image: url(./img/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.welcome-text {
+    position: absolute;
+    width: 60%;
+    height: 70vh;
+    left: 75px;
+    top: 170px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 20px;
+
+}
+
+.welcome-text h1 {
+    font-size: 80px;
+    font-weight: 900;
+    font-family: 'Dela Gothic One', cursive;
+    letter-spacing: 4px;
+}
+
+.welcome-text h3 {
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Karla', cursive;
+    text-transform: uppercase;
+}
+
+.welcome-text p {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Karla', sans-serif;
+    width: 80%;
+    margin-top: 15px;
+    color: #6bedd4;
+}
+
+nav {
+    width: 90%;
+    height: 13vh;
+    display: flex;
+    position: absolute;
+    border-radius: 15px;
+    top: 20px;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+
+nav ul {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    height: 100%;
+    width: 73%;
+    justify-content: space-around;
+}
+
+nav ul a{
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'Karla', sans-serif;
+    color: #c8c8c8;
+    transition: .3s ease;
+}
+
+nav ul a:hover {
+    color: #ffffff;
+}
+
+.logo {
+    width: 200px;
+    height: 65px;
+    position: absolute;
+    left: 25px;
+}
+
+.login-btn {
+    background: #249176;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: .3s ease;
+    font-weight: 400;
+}
+
+.login-btn:hover {
+    background: #1b6d58;
+}
+
+.welcome-img {
+    position: absolute;
+    padding: 10px;
+    border-radius: 20px;
+    right: 100px;
+    top: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ocean {
+    width: 350px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* !WATER======================================================================= */
+
+#Water {
+    background: url(./img/water-gradient.png);
+    background-position: center center;
+    background-size: cover;
+    flex-direction: row;
+}
+.sub-heading {
+    position: absolute;
+    top: 10px;
+    font-size: 80px;
+    font-weight: 900;
+    font-family: 'Dela Gothic One', cursive;
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.chart-div {
+    padding: 20px;
+    border-radius: 20px;
+    width: 35%;
+    position: absolute;
+    left: 80px;
+    top: 150px;
+}
+
+.chart-text {
+    position: absolute;
+    width: 50%;
+    right: 80px;
+    top: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    border-radius: 20px;
+    padding: 80px 50px;
+}
+
+.chart-text h1 {
+    color: #ffffff;
+    font-size: 65px;
+}
+
+.chart-text p {
+    font-size: 30px;
+}
+
+.good {
+    color: #6bedd4;
+}
+
+.chart-pic {
+    width: 200px;
+    padding-top: 25px;
+    margin-left: 220px;
+    margin-bottom: -50px;
+}
+
+
+
+
+
+
+
+
+
+
+#Electricity {
+    background: url(./img/bad-bg.png);
+    background-position: center center;
+    background-size: cover;
+    flex-direction: row;
+}
+
+.bad {
+    color: rgb(236, 113, 113);
+}
+
+
+
+
+
+
+
+#Carbon {
+    background-image: url(./img/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    flex-direction: row;
+}
+
+
+#Fuel {
+    background: url(./img/bad-bg.png);
+    background-position: center center;
+    background-size: cover;
+    flex-direction: row;
+}
+
+.fuel-text {
+    top: 150px;
+}
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 30vh;
+    background-image: url(./img/Ocean.png);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    box-shadow: 0px -10px 100px black;
+}
+
+footer img {
+    position: absolute;
+    right: 20px;
+    width: 120px;
+}
+footer div {
+    
+    position: absolute;
+    left: 20px;
+    width: 120px;
+    font-size: 20px;
+    width: 500px;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+footer p {
+    font-size: 20px;
+}
+footer b {
+    font-size: 25px;
+}
